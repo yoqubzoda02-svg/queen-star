@@ -256,7 +256,7 @@ function LoginScreen({onLogin,ownerPin}){
       )}
     </div>
   );
-}){
+})
   const [showPin,setShowPin]=useState(false);
   const [showEmp,setShowEmp]=useState(false);
   const [pin,setPin]=useState('');
