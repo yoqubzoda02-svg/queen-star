@@ -3,7 +3,6 @@ import * as XLSX from 'xlsx';
 import { db, auth } from './firebase.js';
 import { doc, setDoc, onSnapshot, collection, addDoc, query, orderBy, getDoc } from 'firebase/firestore';
 import { RecaptchaVerifier, signInWithPhoneNumber } from 'firebase/auth';
-import { signInWithPhoneNumber, RecaptchaVerifier } from 'firebase/auth';
 
 const BG='#0A0908',SURF='#131110',CARD='#1A1816',BORD='#2A2520',GOLD='#C9952A',CREAM='#F2EDE4',MUTED='#6A6055',GREEN='#4CB87A',RED='#D95050',BLUE='#4A9ECC',AMBER='#E8963A';
 const fmt=(n)=>new Intl.NumberFormat('ru-RU').format(Math.round(n||0));
@@ -256,7 +255,7 @@ function LoginScreen({onLogin,ownerPin}){
       )}
     </div>
   );
-}){
+})
   const [showPin,setShowPin]=useState(false);
   const [showEmp,setShowEmp]=useState(false);
   const [pin,setPin]=useState('');
