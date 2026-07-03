@@ -156,7 +156,7 @@ function PaymentToggle({value,onChange}){
   );
 }
 
-function Dashboard({todayRevenue,totalStock,monthProfit,annaShare,todaySales,products,settings}){
+function Dashboard({todayRevenue,totalStock,monthRevenue,monthProfit,annaShare,todaySales,products,settings}){
   const cash=todaySales.filter(s=>s.paymentMethod==='cash').reduce((s,x)=>s+x.total,0);
   const trans=todaySales.filter(s=>s.paymentMethod==='transfer').reduce((s,x)=>s+x.total,0);
   const low=products.filter(p=>!p.transit&&(p.qty-(p.reserved||0))<settings.lowStock&&p.qty>0);
@@ -2861,7 +2861,7 @@ export default function QueenStar(){
       <div style={{background:SURF,borderBottom:`1px solid ${BORD}`,padding:'12px 18px',display:'flex',justifyContent:'space-between',alignItems:'center',position:'sticky',top:0,zIndex:50}}>
         <div>
           <div style={{display:'flex',alignItems:'center',gap:8}}>
-            <div style={{width:36,height:36,borderRadius:'50%',background:`linear-gradient(135deg,${GOLD},${GOLD_D||'#9C6F22'})`,display:'flex',alignItems:'center',justifyContent:'center',fontSize:15,fontWeight:900,color:'#fff',fontFamily:'serif',boxShadow:`0 2px 8px ${GOLD}44`}}>QS</div>
+            <div style={{width:36,height:36,borderRadius:'50%',background:`linear-gradient(135deg,${GOLD},#9C6F22)`,display:'flex',alignItems:'center',justifyContent:'center',fontSize:15,fontWeight:900,color:'#fff',fontFamily:'serif',boxShadow:`0 2px 8px ${GOLD}44`}}>QS</div>
             <div>
               <div style={{fontFamily:"'Playfair Display',serif",fontSize:17,color:GOLD,letterSpacing:2,lineHeight:1}}>QUEEN STAR</div>
               <div style={{fontSize:8,color:MUTED,letterSpacing:2,marginTop:1}}>ДУШАНБЕ · ТАДЖИКИСТАН</div>
