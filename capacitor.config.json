@@ -1,0 +1,18 @@
+{
+  "appId": "com.queenstar.app",
+  "appName": "Queen Star",
+  "webDir": "dist",
+  "bundledWebRuntime": false,
+  "android": {
+    "allowMixedContent": true,
+    "backgroundColor": "#0A0908"
+  },
+  "plugins": {
+    "SplashScreen": {
+      "launchShowDuration": 2000,
+      "backgroundColor": "#0A0908",
+      "androidSplashResourceName": "splash",
+      "showSpinner": false
+    }
+  }
+}
