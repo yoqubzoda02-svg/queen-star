@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">Queen Star</string>
+    <string name="title_activity_main">Queen Star</string>
+    <string name="package_name">com.queenstar.app</string>
+    <string name="custom_url_scheme">com.queenstar.app</string>
+</resources>
